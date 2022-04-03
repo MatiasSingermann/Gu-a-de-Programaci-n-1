@@ -37,7 +37,18 @@ public class Ejercicio_12 : MonoBehaviour
                 break;
 
             default:
-                Debug.Log("Insuficiente");
+                if (puntajetotal < 6)
+                {
+                    Debug.Log("Insuficiente");
+                }
+                else if (puntajetotal > 6 & puntajetotal < 12)
+                {
+                    Debug.Log("Regular");
+                }
+                else if (puntajetotal > 12 & puntajetotal < 18)
+                {
+                    Debug.Log("Muy bien");
+                }
                 break;
         }
     }
