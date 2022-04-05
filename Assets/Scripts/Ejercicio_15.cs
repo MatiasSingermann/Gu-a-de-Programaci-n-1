@@ -23,25 +23,25 @@ public class Ejercicio_15 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (num! < -9 & num! > 9)
+        if (num >= -9 && num <= 9)
         {
             estaEnA = true;
             Debug.Log("El número es de un solo dígito");
         }
 
-        else if (num % 2 > 0)
+        if (num % 2 > 0)
         {
             estaEnB = true;
             Debug.Log("El número es impar");
         }
 
-        else if (estaEnA == true & estaEnB == true)
+        if (estaEnA == true & estaEnB == true)
         {
             estaEnAmbos = true;
             Debug.Log("El número cumple con las 2 reglas");
         }
 
-        else
+        else if (estaEnA == false & estaEnB == false)
         {
             noEstaEnNinguno = true;
             Debug.Log("El número no cumple con ninguna de las 2 reglas");
